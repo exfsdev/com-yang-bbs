@@ -12,6 +12,7 @@
         <module>com-yang-bbs-biz</module>
         <module>com-yang-bbs-provider</module>
         <module>com-yang-bbs-api</module>
+        <module>com-yang-bbs-common</module>
     </modules>
 
 
