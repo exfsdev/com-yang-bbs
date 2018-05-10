@@ -22,6 +22,7 @@ public interface LoginDTO {
 
         private String password;
 
+        @Override
         public void validate() throws ValidateException {
             if (StringUtil.isNullOrSpace(account)) {
                 throw new ValidateException(0, "Please fill out the account.");

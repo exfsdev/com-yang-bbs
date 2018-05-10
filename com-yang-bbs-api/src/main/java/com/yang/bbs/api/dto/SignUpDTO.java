@@ -34,6 +34,7 @@ public interface SignUpDTO {
 
         private String code;
 
+        @Override
         public void validate() throws ValidateException {
             if (StringUtil.isNullOrSpace(email)) {
                 throw new ValidateException(1, "Please fill out the e-mail.");
