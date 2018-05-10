@@ -53,6 +53,12 @@ public interface SignUpDTO {
             if (StringUtil.isNullOrSpace(code)) {
                 throw new ValidateException(6, "Please fill out the e-mail validate code.");
             }
+            if (!StringUtil.isEmail(email)) {
+                throw new ValidateException(1, "E-mail address format error.");
+            }
+            if (!StringUtil.isAccount(account)) {
+                throw new ValidateException(1, "Account format error.");
+            }
         }
     }
 
