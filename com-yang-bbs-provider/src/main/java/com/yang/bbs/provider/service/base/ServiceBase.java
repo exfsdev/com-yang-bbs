@@ -2,10 +2,13 @@ package com.yang.bbs.provider.service.base;
 
 
 
-import com.yang.bbs.api.dto.base.ApiResult;
+import com.yang.bbs.provider.dto.base.ApiResult;
 
 import java.io.Serializable;
 
+/**
+ * @author yangqf
+ */
 public abstract class ServiceBase {
 
     private static final int SUCCESS_CODE = 0;
