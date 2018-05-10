@@ -36,22 +36,22 @@ public interface SignUpDTO {
 
         public void validate() throws ValidateException {
             if (StringUtil.isNullOrSpace(email)) {
-                throw new ValidateException(0, "Please fill out the e-mail.");
+                throw new ValidateException(1, "Please fill out the e-mail.");
             }
             if (StringUtil.isNullOrSpace(account)) {
-                throw new ValidateException(0, "Please fill out the account.");
+                throw new ValidateException(2, "Please fill out the account.");
             }
             if (StringUtil.isNullOrSpace(name)) {
-                throw new ValidateException(0, "Please fill out the nick name.");
+                throw new ValidateException(3, "Please fill out the nick name.");
             }
             if (StringUtil.isNullOrSpace(password)) {
-                throw new ValidateException(0, "Please fill out the password.");
+                throw new ValidateException(4, "Please fill out the password.");
             }
             if (StringUtil.isNullOrSpace(confirm)) {
-                throw new ValidateException(0, "Please fill out the pgit puassword confirm.");
+                throw new ValidateException(5, "Please fill out the password confirm.");
             }
             if (StringUtil.isNullOrSpace(code)) {
-                throw new ValidateException(0, "Please fill out the e-mail validate code.");
+                throw new ValidateException(6, "Please fill out the e-mail validate code.");
             }
         }
     }
