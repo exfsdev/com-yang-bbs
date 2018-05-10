@@ -48,7 +48,7 @@ public interface SignUpDTO {
                 throw new ValidateException(0, "Please fill out the password.");
             }
             if (StringUtil.isNullOrSpace(confirm)) {
-                throw new ValidateException(0, "Please fill out the password confirm.");
+                throw new ValidateException(0, "Please fill out the pgit puassword confirm.");
             }
             if (StringUtil.isNullOrSpace(code)) {
                 throw new ValidateException(0, "Please fill out the e-mail validate code.");
